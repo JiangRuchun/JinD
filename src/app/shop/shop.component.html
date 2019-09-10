@@ -1,4 +1,63 @@
-<h1>
+<!-- <h1>
     This is shopPage!
-</h1>
-<a [routerLink]="['/home']">HOME</a>
+</h1> -->
+
+<section>
+    <header>
+        <h4>
+            {{ titleInfo.title1 }}
+        </h4>
+    </header>
+    <!-- <hgroup>
+        <h3>01</h3>
+        <h3>02</h3>
+        <h3>03</h3>
+    </hgroup> -->
+    <article class="partPhoto">
+        <img *ngFor="let imgItem of itemArr" [src]="imgItem.path" alt="">
+    </article>
+
+    <div class="titleDiv">
+        <p>title0</p>
+    </div>
+    <article>
+        
+        <figure>
+            <figcaption>标题</figcaption>
+            <p>标题内容</p>
+        </figure>
+    </article>
+    
+
+   
+</section>
+
+
+<aside>
+    <ul>
+        <li>
+            <a>001</a>
+        </li>
+        <li>
+            <a>002</a>
+        </li>
+        <li>
+            <a>003</a>
+        </li>
+    </ul>
+</aside>
+
+<footer>
+    <nav>
+        <ul>
+            <li>
+                <img src="" alt="">
+            </li>
+            <li *ngFor="let navItem of navgationArr" >
+                <a [routerLink]="navItem.path">
+                    {{ navItem.title }}
+                </a>
+            </li>
+        </ul>
+    </nav>
+</footer>

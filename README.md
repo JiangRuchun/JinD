@@ -27,28 +27,44 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-# angular官网
+## angular官网
 https://angular.cn/
 
-# 图标库：
+## 图标库：
 https://www.iconfont.cn/
 
-# sass官网：
+## sass官网：
 https://www.sass.hk/
 
-# 安装angular cli
+## 安装angular cli
 npm install -g @angular/cli
 
-# 新建项目
+## 新建项目
 ng new ProjectName
 
-# 指向项目
+## 指向项目
 cd ProjectName
 
-# 运行项目
+## 运行项目
 ng serve --open
 或者
 ng serve -o
 
-# 浏览器本地运行
+## 浏览器本地运行
 http://localhost:4200/
+
+
+
+
+## 踩过的坑
+
+### 1.无法使用hgroup
+
+### 2.div元素高度撑满浏览器的内部容器
+使用height：100%是没有效果的；
+而应该是div{ position: absolute; width:  100%; height: 100%; }
+
+### 3.注意图片大小占用过多内存，加载时一半一半的加载非常的卡顿
+注意缩小图片大小，减少内存占用
+
+### 4.

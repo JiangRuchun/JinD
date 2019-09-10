@@ -1,0 +1,112 @@
+
+$marginLeft: 16px;
+$color: rgba(136,136,136,1);
+$color2: rgba(128,128,128,1);
+$color3: rgba(136,136,136,.1);
+$colorWhite: rgba(255, 255, 255, 1);
+$padding: 6% 8%;
+
+div.content {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+section {
+    flex: 1;
+    height: 100%;
+    &:nth-child(1) {
+        background-image: url(.././../assets/img/home/back.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+    &:nth-child(2) {
+        color: $color;
+    }
+    article {
+        position: relative;
+        height: 100%;
+        h4 {
+            margin: 0;
+            padding: $padding;
+            font-weight: 400;
+        }
+        h3 {
+            padding: $padding;
+
+        }
+        p {
+            padding: $padding;
+            background: $color3;
+        }
+        div {
+            padding: $padding;
+            a {
+                display: inline-block;
+                border: 2px solid $color;
+                border-radius: $marginLeft;
+                text-decoration: none;
+                color: $color;
+                padding: 2px $marginLeft;
+                margin: 0 8px;
+                &:hover {
+                    background: $color;
+                    color: $colorWhite;
+                }
+            }
+        }
+        
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+            position: absolute;
+            bottom: 0;
+            left: $marginLeft;
+            display: flex;
+            li {
+                border: 2px solid $color;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                margin: 0 6px;
+                background-repeat: no-repeat;
+                background-position: -1px;
+                background-size: 105%;
+                &:hover {
+                    border-color: transparent;
+                }
+                &:nth-child(1) {
+                    background-image: url(../../assets/img/home/Facebook.png);
+                    &:hover {
+                        background-image: url(../../assets/img/home/Facebook-h.png);
+                    }
+                }
+                &:nth-child(2) {
+                    background-image: url(../../assets/img/home/INS.png);
+                    &:hover {
+                    background-image: url(../../assets/img/home/INS-h.png);
+                    }
+                }
+                &:nth-child(3) {
+                    background-image: url(../../assets/img/home/QQ.png);
+                    &:hover {
+                        background-image: url(../../assets/img/home/QQ-h.png);
+                    }
+                }
+                &:nth-child(4) {
+                    background-image: url(../../assets/img/home/wx.png);
+                    &:hover {
+                        background-image: url(../../assets/img/home/wx-h.png);
+                    }
+                }
+            }
+        }
+    }
+}
+
+}  
