@@ -19,17 +19,43 @@
 
     <div class="titleDiv">
         <p>title0</p>
+        <span>{{ titleInfo.title1Txt }}</span>
     </div>
-    <article>
-        
-        <figure>
-            <figcaption>标题</figcaption>
-            <p>标题内容</p>
-        </figure>
-    </article>
-    
 
-   
+    <figure class="partOne">
+        <figcaption>
+            <span>{{ titleInfo.partOne.title }}</span>
+            <img [src]="titleInfo.partOne.path" alt="">
+        </figcaption>
+        <p>{{ titleInfo.partOne.content }}</p>
+    </figure>
+
+    <figure class="partTwo">
+        <figcaption>
+            <span>{{ titleInfo.partTwo.title }}</span>
+            <img [src]="titleInfo.partTwo.path" alt="">
+        </figcaption>
+        <p>{{ titleInfo.partTwo.content }}</p>
+    </figure>
+
+    <figure class="partThree">
+        <figcaption>
+            <span>{{ titleInfo.partThree.title }}</span>
+            <img [src]="titleInfo.partThree.path" alt="">
+        </figcaption>
+        <p>{{ titleInfo.partThree.content }}</p>
+    </figure>
+
+    <figure class="partFour">
+        <figcaption>
+            <span>{{ titleInfo.partFour.title }}</span>
+            <img [src]="titleInfo.partFour.path" alt="">
+        </figcaption>
+        <p>{{ titleInfo.partFour.content }}</p>
+    </figure>
+
+
+
 </section>
 
 

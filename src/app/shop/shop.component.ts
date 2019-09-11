@@ -7,7 +7,28 @@ import { Component } from '@angular/core';
 })
 export class ShopComponent {
   public titleInfo = {
-    title1: 'titl1'
+    title1: 'titl1',
+    title1Txt: 'title1Txt',
+    partOne: {
+      title: 'partOneTitle',
+      content: 'partOneContent',
+      path: '././assets/img/shop/part1.png'
+    },
+    partTwo: {
+      title: 'partTwoTitle',
+      content: 'partTwoContent',
+      path: '././assets/img/shop/part2.png'
+    },
+    partThree: {
+      title: 'partThreeTitle',
+      content: 'partThreeContent',
+      path: '././assets/img/shop/part3.png'
+    },
+    partFour: {
+      title: 'partFourTitle',
+      content: 'partFourContent',
+      path: '././assets/img/shop/part4.png'
+    }
   };
   public itemArr = [{
     name: '',
@@ -26,8 +47,10 @@ export class ShopComponent {
   public navgationArr = [{
     title: '首页',
     path: '/home'
-  }, {
-    title: '小店',
-    path: '/shop'
-  }];
+  },
+  // {
+  //   title: '小店',
+  //   path: '/shop'
+  // }
+  ];
 }
